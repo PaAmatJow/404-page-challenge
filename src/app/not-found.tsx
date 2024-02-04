@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const NotFound = () => {
   const [isLoading, setIsloading] = useState(true);
+  const [isClicked, setIsClicked] = useState(false);
 
 	const progressRef = useRef(null);
 	const buttonRef = useRef<HTMLButtonElement>(null);
@@ -73,9 +74,10 @@ const NotFound = () => {
 						{isLoading ? (
 							<button
 								ref={buttonRef}
+								onClick={()=>{setIsClicked(true)}}
 								className='px-5 py-1 bg-white text-[#1e1f20] rounded-md absolute left-[50%] translate-x-[-50%] top-[70px] border border-black transition-all duration-100'
 							>
-								Cancel
+								{isClicked ? 'Uncancellable' : 'Cancel'}
 							</button>
 						) : (
 							<Link href='/'>
