@@ -45,7 +45,7 @@ const NotFound = () => {
 	}, 10000)
 
 	const textOne = 'redirecting to a matching page on the dark web... 😈'
-	const textTwo = `I'm joking 😂`
+	const textTwo = `I'm joking 😂. Head back to homepage`
 
 	return (
 		<div className='h-screen w-full flex items-center justify-center bg-[#bbb'>
