@@ -73,7 +73,7 @@ const NotFound = () => {
 						{isLoading ? (
 							<button
 								ref={buttonRef}
-								className='px-5 py-1 bg-white text-[#1e1f20] rounded-md absolute left-[50%] translate-x-[-50%] top-[70px] border border-black'
+								className='px-5 py-1 bg-white text-[#1e1f20] rounded-md absolute left-[50%] translate-x-[-50%] top-[70px] border border-black transition-all duration-150'
 							>
 								Cancel
 							</button>
