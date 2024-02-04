@@ -44,7 +44,7 @@ const NotFound = () => {
 		setIsloading(false)
 	}, 10000)
 
-	const textOne = 'redirecting to a matching page in the dark web... 😈'
+	const textOne = 'redirecting to a matching page on the dark web... 😈'
 	const textTwo = `I'm joking 😂`
 
 	return (
